@@ -1,1 +1,48 @@
-theme: jekyll-theme-cayman
+title: Bora Search
+author: bora-search
+description: > # TODO
+  Bora Search is an extension that allows to easily and automatically distribute queries between
+  the search engines of your choice. How you distribute and balance your search queries is up to you.
+baseurl: ""
+url: "https://bora-search.github.io"
+
+# THEME SETTINGS
+navigation: # Navigation links
+  - {name: 'Home', link: '/'}
+  - {name: 'About', link: '/about'}
+  - {name: 'Contact', link: '/contact'}
+
+tagline: >-
+  Switch automatically between search engines &amp; enjoy a more responsible surf on the web
+hero_img: posts/bora-bora_lg.jpg # Main background image: use the path from /assets/img/... => This will output /assets/img/posts/...
+
+email: bora-search@googlegroups.com
+
+github_username:  bora-search
+instagram_username: boraboraphotos
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge # or pygments or null
+# theme: jekyll-sleek # Uncomment if you're using the theme as a ruby gem
+exclude:
+  - README.md
+  - node_modules
+  - script
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - npm-debug.log
+  - gulpfile.js
+
+include: ['_pages']
+permalink: /:title/
+
+compress_html:
+  clippings: all
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
